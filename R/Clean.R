@@ -10,10 +10,14 @@
 #'@details A number of data cleaning steps are implemented. \code{which} takes a (case insensitive) character or numeric vector
 #'  declaring which should be used:
 #' \itemize{
-#'  \item{"1 - Impossible"}{Remove rows with imposisble latitude or longitude values}
-#'  \item{"2 - Incomplete"}{Remove rows with missing data for either latitude of longitude}
-#'  \item{"3 - Unlikely"}{Remove rows with unlikely data such as (0, 0)}
+#'  \item{"1 - Impossible"}{ Remove rows with impossible latitude or longitude values}
+#'  \item{"2 - Incomplete"}{ Remove rows with missing data for either latitude of longitude}
+#'  \item{"3 - Unlikely"}{ Remove rows with unlikely data such as (0, 0)}
 #' }
+#'
+#' e.g. \code{which = c('impossible', 'unlikely')} will remove rows with 
+#'   unlikely or impossible lat long values but not incomplete values.
+#'   \code{which = c(1:3)} will perform all cleaning processes.
 #' 
 #' @author ZOON Developers, \email{zoonproject@@gmail.com}
 #' @section Version: 1.0
