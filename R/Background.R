@@ -31,7 +31,7 @@
 
 Background <- function (.data, n = 100, bias = NULL, seed = NULL) {
   
-  zoon:::GetPackage(dismo)
+  zoon:::GetPackage('dismo')
   
   occurrence <- .data$df
   
@@ -117,6 +117,8 @@ Background <- function (.data, n = 100, bias = NULL, seed = NULL) {
                    covs)
   
   names(df)[6:ncol(df)] <- names(.data$ras)
+  
+  attr(df, 'covCols') <- names(ras)
   
   # remove missing values
   if(NROW(na.omit(df)) > 0){

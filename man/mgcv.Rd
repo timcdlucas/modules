@@ -2,7 +2,7 @@
 % Please edit documentation in R/mgcv.R
 \name{mgcv}
 \alias{mgcv}
-\title{Model module:mgcv}
+\title{Model module: mgcv}
 \usage{
 mgcv(.df, k = -1, bs = "tp")
 }
@@ -44,7 +44,7 @@ ZOON Developers, \email{zoonproject@gmail.com}
 Other model: \code{\link{BiomodModel}}, \code{\link{GBM}},
   \code{\link{LogisticRegression}},
   \code{\link{MachineLearn}}, \code{\link{MaxEnt}},
-  \code{\link{OptGRaF}}, \code{\link{QuickGRaF}},
-  \code{\link{RandomForest}}
+  \code{\link{MaxLike}}, \code{\link{OptGRaF}},
+  \code{\link{QuickGRaF}}, \code{\link{RandomForest}}
 }
 

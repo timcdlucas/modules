@@ -27,7 +27,8 @@ Tim Lucas \email{timcdlucas@gmail.com} and Samuel Bosch \email{mail@samuelbosch.
 }
 \seealso{
 Other covariate: \code{\link{AirNCEP}},
-  \code{\link{Bioclim}}, \code{\link{NCEP}},
+  \code{\link{Bioclim}}, \code{\link{CarolinaWrenRasters}},
+  \code{\link{NCEP}}, \code{\link{NaiveRandomRaster}},
   \code{\link{UKAir}}, \code{\link{UKBioclim}}
 }
 

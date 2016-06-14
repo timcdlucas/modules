@@ -33,7 +33,7 @@ Module type: Process
  presence-only, presence/absence, abundance, proportion
 }
 \author{
-Tom August' \email{tomaug@ceh.ac.uk'}
+Tom August, \email{tomaug@ceh.ac.uk}
 }
 \seealso{
 Other process: \code{\link{BackgroundAndCrossvalid}},
@@ -41,6 +41,7 @@ Other process: \code{\link{BackgroundAndCrossvalid}},
   \code{\link{Crossvalidate}}, \code{\link{MESSMask}},
   \code{\link{NoProcess}},
   \code{\link{OneHundredBackground}},
-  \code{\link{OneThousandBackground}}
+  \code{\link{OneThousandBackground}},
+  \code{\link{Transform}}
 }
 

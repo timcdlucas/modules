@@ -2,7 +2,7 @@
 % Please edit documentation in R/UKAnophelesPlumbeus.R
 \name{UKAnophelesPlumbeus}
 \alias{UKAnophelesPlumbeus}
-\title{Occurrence module: UK *Anopheles plumbeus* data}
+\title{Occurrence module: UK Anopheles plumbeus data}
 \usage{
 UKAnophelesPlumbeus()
 }
@@ -26,7 +26,10 @@ ZOON Developers, \email{zoonproject@gmail.com}
 }
 \seealso{
 Other occurrence: \code{\link{AnophelesPlumbeus}},
-  \code{\link{CWBZimbabwe}},
-  \code{\link{LocalOccurrenceData}}, \code{\link{SpOcc}}
+  \code{\link{CWBZimbabwe}}, \code{\link{CarolinaWrenPA}},
+  \code{\link{CarolinaWrenPO}},
+  \code{\link{LocalOccurrenceData}},
+  \code{\link{NaiveRandomPresenceAbsence}},
+  \code{\link{NaiveRandomPresence}}, \code{\link{SpOcc}}
 }
 

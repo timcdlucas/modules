@@ -5,8 +5,9 @@
 #'  in that order.
 #'
 #' @param filename The path to the spreadsheet. The spreadsheet should have a 
-#'  header giving column names. .csv, .tab, .tsv handled. The xlsx
-#'  package is used for excel files.
+#'  header giving column names. The column names should be 'longitude', 'latitude',
+#'  and 'value'. 'value' is a numeric such as a proportion, count or presence/absence
+#'  (1/0). The file can be .csv, .tab, .tsv, or .xlsx
 #'
 #' @param occurrenceType What type data is it? One of 'presence', 
 #' 'presence/absence', 'abundance', 'probability' 
@@ -84,14 +85,14 @@ function(filename='myData.csv',
     }
     # If it still isn't right, load data.table and use fread.
     if (ncol(data) < 3 | !loadComplete){
-      zoon::GetPackage(data.table)
+      zoon::GetPackage('data.table')
       data <- as.data.frame(fread(filename))
     }
   } else if (extension %in% c('xls', 'xlsx')) {
-    zoon::GetPackage(xlsx)
+    zoon::GetPackage('xlsx')
     data <- read.xlsx(filename, header = TRUE, sheetIndex = 1)
   } else if (extension == 'dbf') {
-    zoon::GetPackage(foreign)
+    zoon::GetPackage('foreign')
     data <- read.dbf(filename)
   } else if (exists(filename, envir = globalenv())) {
     data <- eval(parse(text = filename), envir = globalenv())

@@ -47,7 +47,7 @@ function (.data, which = c(1, 2, 3, 4)) {
   occurrence <- .data$df
   
   # Load the scrubr package for data cleaning
-  zoon::GetPackage(scrubr)  
+  zoon::GetPackage('scrubr')  
 
   # Remove impossible lat lon rows.
   if (1 %in% which | 'impossible' %in% which){
