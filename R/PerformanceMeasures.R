@@ -41,13 +41,13 @@ function(.model, .ras, threshold = NULL){
   }
 
   if (all(.model$data$fold == 1)){
+
     warning('You have no cross-validation folds, validation statistics may be misleading')
 
     # make predictions for the model
     covs <- .model$data[, 7:NCOL(.model$data), drop = FALSE]
     p <- ZoonPredict(zoonModel = .model$model,
                      newdata = covs)
-    
     confusion <- SDMTools::confusion.matrix(.model$data$value,
                                             p,
                                             threshold)
